@@ -9,15 +9,10 @@
 /*
 Fonte dos textos (google fonts)
 
-font-family: 'League Spartan', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 
 
-h1 {
-  color:#6C63FF;
-  font-family: 'League Spartan', sans-serif;
-}
 
 html {
   height: 50vh;
@@ -29,7 +24,12 @@ body {
   height: 100%;
 }
 
-
+/*
+*info container 
+Engloba o título e as informações dentro da caixa, junto com a imagem do foguete.
+* Borders
+São as imagens. Coloquei os comprimentos das imagens em 100%.
+*/
 .infocontainer {
   display: flex;
   height: 50vh;
@@ -41,6 +41,11 @@ body {
   width: 100%;
 }
 
+/*
+*countdownBox
+
+Caixa de contagem. onde conterá todas as informações sobre a contagem
+*/
 
 .countdownBox {
   width: 500px;
@@ -49,40 +54,58 @@ body {
   text-align: center;
 }
 
-
-#countbox {
-  margin-top: 20px;
-}
-
-#counter {
-  font-size: 80px;
-}
-
+/*Formatação dos títulos e dos textos*/
 
 h1 , p {
   font-family: 'Poppins', sans-serif;
 }
 
 h1 {
+  color:#6C63FF;
   font-size: 42px;
-  
 }
+/*
+* countdownContainer
+Engloba TimerNames (nomes dos contadores) e DeadlineMarquee (marcadores de prazo final)
+*/
 
-
-.subscribe-box {
-  margin-top: 12px;
-}
-
-.subscribe-box > p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  color: #4D4C59;
-}
 .countdowncontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+
+/*
+ * TimerNames
+ - Bloco que organiza os nomes dos contadores
+ * TText (Time Text)
+ - Textos que indentificam os valores que o contador representa.
+ */
+ 
+ .TimerNames {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin-top: 15px;
+  }
+
+  #TText {
+    color: #C8C8C8;
+    margin: 0px 15px;
+  }
+  
+/*
+* Deadline Marquee
+  -Bloco que organiza os divs do números do contador
+* Marquees
+  -Configuração dos blocos de contador
+* TNumbers
+  Formatação dos números
+* TPoints
+  Formatação dos dois pontos    
+
+*/
+
 .DeadlineMarquee {
   display: flex;
   flex-direction: row;
@@ -90,23 +113,12 @@ h1 {
 
 }
 
-.TimerNames {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 15px;
-}
+/*Tamanho e cor dos números e os dois pontos*/
 
 #marquee {
   margin-top: 5px;
-   text-align: center ;
+  text-align: center ;
 }
-
-#TText {
-  color: #C8C8C8;
-  margin: 0px 15px;
-}
-
 
 #TNumber, #TPoints {
   font-size: 80px;
@@ -115,7 +127,24 @@ h1 {
 
 #TPoints {
   display: block;
+  
+}
 
+/*
+  *Subscribe box
+  Caixa de inscrição. Contém o texto para se inscrever e o botão
+  Inseri hover por capricho.
+  Aparência do botão alterado
+*/
+
+
+.subscribe-box {
+  margin-top: 12px;
+}
+
+.subscribe-box > p {
+  font-size: 20px;
+  color: #4D4C59;
 }
 
 button {
@@ -128,12 +157,18 @@ button {
   background-color:  #6C63FF;
   border-radius: 8px;
   border: none;
-
+  
 }
 
 button:hover {
   color: white;
 }
+
+/*
+  Configuração do tamanho do foguete, pois apresentava um tamanho menor
+
+*/
+
 
 img {
   width: 40vw;

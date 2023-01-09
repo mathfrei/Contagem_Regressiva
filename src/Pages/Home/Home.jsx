@@ -31,14 +31,8 @@ export function Home() {
    return () => clearInterval(interval);
  }, []);
 
-  
-
-  
-
-
   return (
     <div className="Main">
-    <div className="section-1">  
          <img id="borders"src={topimage} alt="top_image"/>
          <div className="infocontainer">
               <div className="countdownBox" id="countbox">    
@@ -64,7 +58,6 @@ export function Home() {
                            <p id="TPoints">:</p>
                        </div>
                       <div id="marquee">
-                          
                           <p id="TNumber">{minutes}</p>
                        </div>
                        <div id="marquee">
@@ -85,7 +78,7 @@ export function Home() {
               </div>
         </div>      
          <img id="borders"src={bottomimage} alt="bottom_image"/>
-      </div>   
+        
     </div>
   )
 }
