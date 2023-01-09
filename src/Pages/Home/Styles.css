@@ -1,0 +1,140 @@
+
+:root {
+  --black: #4D4C59;
+  --purple: #6C63FF;
+	--light-grey: #C8C8C8;
+  --text-color: #9C9AB6;
+}
+
+/*
+Fonte dos textos (google fonts)
+
+font-family: 'League Spartan', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+
+h1 {
+  color:#6C63FF;
+  font-family: 'League Spartan', sans-serif;
+}
+
+html {
+  height: 50vh;
+}
+
+
+body {
+  width: 100vw;
+  height: 100%;
+}
+
+
+.infocontainer {
+  display: flex;
+  height: 50vh;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#borders{
+  width: 100%;
+}
+
+
+.countdownBox {
+  width: 500px;
+  height: 150px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+#countbox {
+  margin-top: 20px;
+}
+
+#counter {
+  font-size: 80px;
+}
+
+
+h1 , p {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 42px;
+  
+}
+
+
+.subscribe-box {
+  margin-top: 12px;
+}
+
+.subscribe-box > p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #4D4C59;
+}
+.countdowncontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.DeadlineMarquee {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.TimerNames {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+#marquee {
+  margin-top: 5px;
+   text-align: center ;
+}
+
+#TText {
+  color: #C8C8C8;
+  margin: 0px 15px;
+}
+
+
+#TNumber, #TPoints {
+  font-size: 80px;
+  color:#4D4C59;
+}
+
+#TPoints {
+  display: block;
+
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #9C9AB6;
+  margin-top: 28px;
+  background-color:  #6C63FF;
+  border-radius: 8px;
+  border: none;
+
+}
+
+button:hover {
+  color: white;
+}
+
+img {
+  width: 40vw;
+}
