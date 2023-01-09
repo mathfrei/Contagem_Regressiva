@@ -12,7 +12,7 @@ export function Home() {
   const [seconds, setSeconds] = useState(0);
 
 
-  let deadline = "January, 12, 2023"
+  let deadline = "January, 30, 2023"
  
   const getTime = () => {
        const time = Date.parse(deadline) - Date.now();
